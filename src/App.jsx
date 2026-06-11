@@ -1,18 +1,21 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/header";
-import BlogCard from "./components/BlogCard";
 import Footer from "./components/Footer";
-
-import posts from "../data";
+import Home from "./pages/home";
+import Blog from "./pages/Blog";
+import Todo from "./components/Todo";
 import "./App.css";
 function App() {
   return (
     <>
       <Header />
-      <section className="posts">
-        {posts.map((post) => (
-          <BlogCard key={post.id} post={post} />
-        ))}
-      </section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <div className="min-h-screen bg-slate-100 p-6">
+        <Todo />
+      </div>
       <Footer />
     </>
   );
