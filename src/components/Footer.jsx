@@ -1,11 +1,11 @@
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300">
+    <footer className="fixed bottom-0 left-0 w-full bg-slate-900 text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-6">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <h2 className="text-lg font-semibold text-white">TechBlog</h2>
+          <h2 className="text-lg font-semibold text-white">Diary</h2>
 
-          <p className="text-sm">© 2026 TechBlog. All rights reserved.</p>
+          <p className="text-sm">© 2026 Diary. All rights reserved.</p>
         </div>
       </div>
     </footer>
